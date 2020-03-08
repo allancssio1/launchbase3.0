@@ -32,12 +32,36 @@ function getAverageTransactionValue(value){
     return (value[0].values + value[1].values + value[2].values + value[3].values)/4
 }
 
-user.transactions.push(createTransaction("credit", 50))
-user.transactions.push(createTransaction("credit", 120))
-user.transactions.push(createTransaction("debit", 80))
-user.transactions.push(createTransaction("debit", 30))
+function getTransactionCredit(types){
+    let countCredit = 0
+    for(let c=0; c<types.length; c++){
+        if(types[c].type == "credit"){
+            countCredit ++
+        }
+    }
+    return countCredit
+
+}
+
+function getTransactionDebit(types){
+    let countDebit = 0
+    for(let c=0; c<types.length; c++){
+        if(types[c].type == "debit"){
+            countDebit++
+        }
+    }
+    return countDebit
+}
+
+user.transactions.push(createTransaction("credit", 50.00))
+user.transactions.push(createTransaction("credit", 120.00))
+user.transactions.push(createTransaction("debit", 80.00))
+user.transactions.push(createTransaction("debit", 30.00))
 
 let result = getHigherTransactionByType(user.transactions)
 console.log(`O usuário ${user.name} teve o maior movivemto foi ${result}!`)
 let media = getAverageTransactionValue(user.transactions)
-console.log(media)
+console.log(`A média das transações foi R$ ${media},00 reias`)
+let validCredit = getTransactionCredit(user.transactions)
+let validDebit = getTransactionDebit(user.transactions)
+console.log(`o total de transações feitas foram de crédito = ${validCredit} e débito = ${validDebit}`)
