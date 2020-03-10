@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap";
 
 *{
     margin:0;
@@ -30,4 +31,13 @@ header div a{
 header div a:hover{
     color: rgba(137, 211, 137, 0.705);
     transition: color 200ms;
+}
+#wrapper{
+    text-align: center;
+    padding: 32px;
+}
+#wrapper img{
+    border-radius: 50%;
+    border: 5px solid #50fa7b;
+    margin-bottom: 32px;
 }
