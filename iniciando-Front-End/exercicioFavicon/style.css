@@ -1,0 +1,21 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: rgb(31, 25, 65);
+
+}
+header{
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+}
+header a{
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    color: rgb(63, 206, 63);
+    transition: 0.5s;
+}
