@@ -3,14 +3,19 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    background: rgb(31, 25, 65);
-
+}
+body{
+    background: rgb(22, 19, 41);
+    text-align: center;
 }
 header{
+    background: rgb(6, 9, 26);
     font-family: 'Roboto', sans-serif;
     padding: 30px;
+    text-align: center;  
 }
 header a{
+    background: rgb(6, 9, 26);
     margin: 30px;
     color: white;
     text-decoration: none;
@@ -18,4 +23,29 @@ header a{
 header a:hover{
     color: rgb(63, 206, 63);
     transition: 0.5s;
+}
+
+main{
+    color: white;
+}
+main img{
+    margin: 20px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(136, 94, 252);
+}
+main p{
+    margin: 20px auto;   
+}
+
+footer a{
+    padding-bottom: 10px;
+    color: paleturquoise;
+    border-bottom: 1px solid powderblue;
+    border-radius: 0px 0px 4px 4px;
+    text-decoration: none;
+}
+footer a:hover{
+    transition: 1s;
+    color: rgb(247, 80, 80);
 }
