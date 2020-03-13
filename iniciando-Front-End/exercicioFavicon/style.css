@@ -11,8 +11,8 @@ body{
 header{
     background: rgb(6, 9, 26);
     font-family: 'Roboto', sans-serif;
-    padding: 30px;
     text-align: center;  
+    padding: 30px;
 }
 header a{
     background: rgb(6, 9, 26);
