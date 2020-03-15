@@ -5,8 +5,9 @@
     border: 0px;
 }
 body{
-    background: rgb(22, 19, 41);
+    background: rgb(4, 4, 8);
     text-align: center;
+    position: relative;
 }
 header{
     background: rgb(6, 9, 26);
@@ -24,6 +25,10 @@ header a:hover{
     color: rgb(63, 206, 63);
     transition: 0.5s;
 }
+body header img{
+    width: 150px;
+    text-align: left;
+}
 
 main{
     color: white;
@@ -36,6 +41,30 @@ main img{
 }
 main p{
     margin: 20px auto;   
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    color: gray;
+    margin: 30px;
+}
+article div h2{
+    margin: 40px auto 90px;
+}
+.cards .card-image{
+    padding-top: 0px;
+    background: rgba(128, 128, 128, 0.219);
+    border: 2px solid rgba(24, 21, 21, 0.11);
+    border-radius: 5px;
+    height: 600px;
+    box-shadow: 1px 1px 1px;
+}
+article div p{
+    margin: 50px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a{
