@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Conteúdo</title>
     <link rel="stylesheet" href="public/style.css">
 </head>
@@ -11,8 +12,9 @@
     <header>
         <img src="img/logo-rocketseat.png"/>
     </header>
-    <article class="cards">
-        <div class="card-image">
+    <section class="cards">
+       
+        <div class="card">
             <h2 id="starter">01</h2>
             <img src="img/starter.svg"/>    
             <p><span id="starter">Torne-se um programador desejado</span> no mercado com esses cursos desejados</p>
@@ -20,7 +22,7 @@
             <h4>Curso Grátis</h4>
         </div>
         
-        <div class="card-image">
+        <div class="card">
             <h2 id="launchBase">02</h2>
             <img src="img/LaunchBase.svg"/>
             <p><span id="launchBase">Domine programação do zero</span> e tenha acesso as melhores oportunidades do mercado</p>
@@ -28,7 +30,7 @@
             <h4>Curso Pago</h4>
         </div>
         
-        <div class="card-image">
+        <div class="card">
             <h2 id="goStack">03</h2>
             <img src="img/GoStack.svg"/>
             <p><span id="goStack">Treinamento imersivo</span> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
@@ -36,17 +38,24 @@
             <h4>Curso Pago</h4>
         </div>
 
-    </article>
+    </section>
     
-    <div class="modalOverlay .active">
-        <div class="modal">
-            <a class="close-modal">
-                <i class="material-icon">close</i>
-            </a>
-            <div class="modalContent">
-                <iframe src="" frameborder="0"></iframe>
+    <article>
+        <div class="modalOverlay active">
+            <div class="modal">
+                <a class="maxim-modal">
+                    <i class="material-icons">crop_3_2</i>
+                </a>    
+                <a class="close-modal">
+                        <i class="material-icons">close</i>
+                </a>
+                <div class="modalContent">
+                    <iframe src="https://rocketseat.com.br/starter" frameborder="0"></iframe>
+                </div>
             </div>
         </div>
-    </div>
+    </article>
+
+    <script src="script.js"></script>
 </body>
 </html>
