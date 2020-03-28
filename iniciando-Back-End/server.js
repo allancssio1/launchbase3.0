@@ -12,7 +12,7 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(require, response){
-    return response.send('index')
+    return response.send('about')
 })
 server.get("/classes", function(require, response){
     return response.render("classes")
