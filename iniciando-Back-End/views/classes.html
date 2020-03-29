@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>LuanchBase</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="links">
-            <a href="/index">Sobre</a>
-            <a href="/classes"> Aulas</a>
-        </div>
-    </header>
+{% extends "layout.html" %}
+
+{% block content %}
+   
     <div id="wrapper">
         <h1>Aulas</h1>
     </div>
@@ -108,7 +97,7 @@
             </div>
         </div>
     </div>
+
+    <script src="/script.js"></script>
     
-    <script src="script.js"></script>
-</body>
-</html>
+{% endblock %}

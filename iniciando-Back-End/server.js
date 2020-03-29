@@ -11,8 +11,8 @@ nunjucks.configure("views", {
     express:server
 })
 
-server.get("/", function(require, response){
-    return response.send('about')
+server.get("/about", function(require, response){
+    return response.render("about")
 })
 server.get("/classes", function(require, response){
     return response.render("classes")
