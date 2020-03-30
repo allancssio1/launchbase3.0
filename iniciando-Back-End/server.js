@@ -5,7 +5,7 @@ const server = express()
 
 server.use(express.static('public'))
 
-server.set("view engine", "html")
+server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express:server
@@ -14,8 +14,8 @@ nunjucks.configure("views", {
 server.get("/about", function(require, response){
     return response.render("about")
 })
-server.get("/classes", function(require, response){
-    return response.render("classes")
+server.get("/portifolio", function(require, response){
+    return response.render("portifolio")
 })
 
 server.listen(5000, function(){
