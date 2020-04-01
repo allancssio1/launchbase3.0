@@ -16,7 +16,7 @@ server.get("/about", function(require, response){
     return response.render("about")
 })
 server.get("/portifolio", function(require, response){
-    return response.render("portifolio")
+    return response.render("portifolio", {itens: videos})
 })
 
 server.listen(5000, function(){
