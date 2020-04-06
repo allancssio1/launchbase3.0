@@ -13,7 +13,7 @@ nunjucks.configure("views", {
     autoescape: false
 })
 
-server.get("/about", function(require, response){
+server.get("/about", function(request, response){
     const about = {
         avatarUrl: "https://avatars2.githubusercontent.com/u/6643122?s=460&u=1e9e1f04b76fb5374e6a041f5e41dce83f3b5d92&v=4",
         name: "Mayk Brito",
@@ -28,7 +28,7 @@ server.get("/about", function(require, response){
 
     return response.render("about", {about})
 })
-server.get("/portifolio", function(require, response){
+server.get("/portifolio", function(request, response){
     return response.render("portifolio", {itens: videos})
 })
 

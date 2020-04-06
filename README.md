@@ -24,8 +24,11 @@ Mayk e outra das aulas.
 ### Exercício Favicon
 
 Criando uma página que se assemelhasse com a Skylab da Rocketseat, usando HTML5, CSS3 e JavaScript puro.
+No desafio 3-2 Mayk pede para refatorar o site e faze-lo com um back-end, e usar nunjucks parar reaproveitar códigos.
 
 ## Iniciando o Back-End
 
 Aprendendo a instalar dependências e a manipular os dados de usuários, bem como deixar a aplicação dinâmica.
 Instalado como dependências de projetos o nodemon para ajudar no desenvolvimento reiniciando o server a cada vez que eu salvar o arquivo.
+
+Usando o nunjucks para enviar para o front-end as configurações pelo back-end,bem como agiliza a edição de informações repetidas e reaproveitamento de código.
