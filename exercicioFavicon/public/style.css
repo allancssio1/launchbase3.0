@@ -16,6 +16,7 @@ header{
     font-family: 'Roboto', sans-serif;
     text-align: center;  
     padding: 30px;
+    position: relative;
 }
 header a{
     background: rgb(6, 9, 26);
@@ -27,9 +28,14 @@ header a:hover{
     color: rgb(63, 206, 63);
     transition: 0.5s;
 }
-body header img{
+/* header .logo-rocketseat{
+    
+} */
+header img{
     width: 150px;
     text-align: left;
+    position: absolute;
+    left: 10px;
 }
 
 main{
@@ -37,7 +43,7 @@ main{
 }
 main img{
     margin: 20px;
-    height: 100px;
+    height: 300px;
     border-radius: 50%;
     border: 1px solid rgb(136, 94, 252);
 }
@@ -58,7 +64,7 @@ section div h2{
 }
 .cards .card-image{
     padding-top: 0px;
-    background: rgba(128, 128, 128, 0.219);
+    background: rgba(128, 128, 128, 0.856);
     border: 2px solid rgba(24, 21, 21, 0.11);
     border-radius: 5px;
     height: 600px;
@@ -66,10 +72,10 @@ section div h2{
 }
 section div p{
     margin: 50px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#starter{
+#starteR{
     color: #7159c1;
 }
 #launchBase{

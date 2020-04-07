@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="x-icon"/>
+    <link rel="stylesheet" href="/style.css">
+    <title>Favicon</title>
+</head>
+<body>
+    <header>
+        {% for header in index.headers %}
+        <a href="{{header.url}}" target="_blank">{{header.name}}</a>
+       {% endfor %} 
+    </header>
+    <main>
+        <img src="logo.jpg" alt="logo Rocketseat">
+        <h1>Rocketseat</h1>
+        <p>Empresa de ensino dedicada ao sucesso da programação.</p>
+    </main>
+    <footer>
+        {% for footer in index.footers %}
+        <a href="{{footer.url}}" target="_blank">{{footer.name}}</a>
+        {% endfor %}
+    </footer>   
+</body>
+</html>
