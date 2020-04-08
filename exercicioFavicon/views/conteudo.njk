@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="x-icon"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Conteúdo</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    
-    <header class="logo-rocketseat">
-        <img src="/logo-rocketseat.png"/>
-    </header>
+{% extends "layout.njk" %}
 
+{% block content %}
     <section class="cards">
        
         <div class="card" id="starter">
@@ -60,6 +47,8 @@
         </div>
     </article>
 
+{% endblock %}
+
+{% block script %}
     <script src="/script.js"></script>
-</body>
-</html>
+{% endblock %}

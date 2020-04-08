@@ -15,14 +15,6 @@ nunjucks.configure("views", {
 
 server.get("/index", function(request, response){
     const index = {
-        headers: [
-            {name: "Home", url: "/index"},
-            {name: "Conteúdo", url: "/conteudo"},
-            {name: "Comunidade", url: "https://discordapp.com/invite/gCRAFhc"},
-            {name: "E-mail", url: "oi@rocketseat.com.br"},
-            {name: "Telefone", url: "+5547992078767"},
-            {name: "Sobre", url: "https://rocketseat.com.br/"}
-        ],
         footers: [
             {name: "GitHub", url: "https://github.com/Rocketseat"},
             {name: "Instagram", url: "https://www.instagram.com/rocketseat_oficial/"},
@@ -30,6 +22,20 @@ server.get("/index", function(request, response){
         ]
     }
     return response.render("index", {index})
+})
+
+server.get("/layout", function(request, response){
+    const layout = { 
+        headers: [
+        {name: "Home", target:"_self", url: "/index"},
+        {name: "Conteúdo", target:"_self", url: "/conteudo"},
+        {name: "Comunidade", target:"_blank", url: "https://discordapp.com/invite/gCRAFhc"},
+        {name: "E-mail", target:"_blank", url: "oi@rocketseat.com.br"},
+        {name: "Telefone", target:"_blank", url: "+5547992078767"},
+        {name: "Sobre", target:"_blank", url: "https://rocketseat.com.br/"}
+        ]
+    }
+    return response.render("layout", {layout})
 })
 
 server.get("/conteudo", function(request, response){

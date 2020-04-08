@@ -5,14 +5,15 @@
     border: 0px;
 }
 body{
-    background: rgb(4, 4, 8);
+    background: url("fundo.jpg");
+    background-size: 100%;
     text-align: center;
     position: relative;
 }
 
 /*=== CABEÇALHO ===*/
 header{
-    background: rgb(6, 9, 26);
+    background: rgb(9, 14, 43);
     font-family: 'Roboto', sans-serif;
     text-align: center;  
     padding: 30px;
@@ -28,14 +29,13 @@ header a:hover{
     color: rgb(63, 206, 63);
     transition: 0.5s;
 }
-/* header .logo-rocketseat{
-    
-} */
+
 header img{
     width: 150px;
     text-align: left;
     position: absolute;
-    left: 10px;
+    left: 3%;
+    bottom: 30%;
 }
 
 main{
@@ -58,17 +58,17 @@ main p{
     grid-gap: 30px;
     color: gray;
     margin: 30px;
+    
 }
 section div h2{
     margin: 40px auto 90px;
 }
-.cards .card-image{
+.card{
     padding-top: 0px;
-    background: rgba(128, 128, 128, 0.856);
-    border: 2px solid rgba(24, 21, 21, 0.11);
-    border-radius: 5px;
+    background: url("fundo.jpg");
+    border: 5px solid rgba(63, 61, 61, 0.856);
+    border-radius: 15px;
     height: 600px;
-    box-shadow: 1px 1px 1px;
 }
 section div p{
     margin: 50px;
