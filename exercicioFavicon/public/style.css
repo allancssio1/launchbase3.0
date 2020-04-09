@@ -5,8 +5,7 @@
     border: 0px;
 }
 body{
-    background: url("fundo.jpg");
-    background-size: 100%;
+    padding: 0;
     text-align: center;
     position: relative;
 }
@@ -37,18 +36,21 @@ header img{
     left: 3%;
     bottom: 30%;
 }
-
 main{
+    background: rgb(42, 25, 100);
     color: white;
 }
 main img{
     margin: 20px;
-    height: 300px;
+    height: 250px;
     border-radius: 50%;
     border: 1px solid rgb(136, 94, 252);
 }
 main p{
     margin: 20px auto;   
+}
+body div .index{
+    background: url("fundo.jpg");
 }
 
 /* ===CARDS=== */

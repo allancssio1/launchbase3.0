@@ -11,14 +11,15 @@
     <header>
         <img src="/logo-rocketseat.png"/>
     
-        {% for header in headers %}
+        {% for header in layout.headers %}
             <a href="{{header.url}}" target="{{header.target}}">{{header.name}}</a>
         {% endfor %} 
     </header>
-
+    <div class="content">
     {% block content %}
     {% endblock %}
 
+    </div>
     {% block script %}
     {% endblock %}
 </body>
