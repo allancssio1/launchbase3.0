@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <title>Favicon</title>
 </head>
@@ -16,33 +17,19 @@
         {% endfor %} 
     </header>
     
-    <section class="cards">
-       
-        <div class="card" id="starter">
-            <h2 id="starteR">01</h2>
-            <img src="/starter.svg"/>    
-            <p><span id="starteR">Torne-se um programador desejado</span> no mercado com esses cursos desejados</p>
-            <h3>5 Módolos</h3>
-            <h4>Curso Grátis</h4>
-        </div>
-        
-        <div class="card" id="launchbase">
-            <h2 id="launchBase">02</h2>
-            <img src="/LaunchBase.svg"/>
-            <p><span id="launchBase">Domine programação do zero</span> e tenha acesso as melhores oportunidades do mercado</p>
-            <h3>6 Módolos</h3>
-            <h4>Curso Pago</h4>
-        </div>
-        
-        <div class="card" id="gostack">
-            <h2 id="goStack">03</h2>
-            <img src="/GoStack.svg"/>
-            <p><span id="goStack">Treinamento imersivo</span> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
-            <h3>8 Módolos</h3>
-            <h4>Curso Pago</h4>
-        </div>
-
-    </section>
+    <div class="fundo">
+        <section class="cards">
+            {% for card in content.cards %}
+                <div class="card" id="{{card.idCard}}">
+                    <h2 id="{{card.id}}">{{card.numberModule}}</h2>
+                    <img src="/{{card.src}}.svg"/>    
+                    <p><span id="card.id">{{card.spanInit}}</span>{{card.spanEnd}}</p>
+                    <h3>{{card.modulos}}</h3>
+                    <h4>{{card.price}}</h4>
+                </div>
+            {% endfor %}
+        </section>
+    </div>
     
     <article>
         <div class="modalOverlay">
@@ -64,5 +51,5 @@
 
     <script src="/script.js"></script>
 
-<html>
-<head>
+</body>
+</html>

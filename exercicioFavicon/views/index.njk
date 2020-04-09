@@ -8,6 +8,7 @@
     <title>Favicon</title>
 </head>
 <body>
+    
     <header>
         <img src="/logo-rocketseat.png"/>
     
@@ -15,17 +16,18 @@
             <a href="{{header.url}}" target="{{header.target}}">{{header.name}}</a>
         {% endfor %} 
     </header>
-
-        <main>
-            <img src="logo.jpg" alt="logo Rocketseat">
-            <h1>Rocketseat</h1>
-            <p>Empresa de ensino dedicada ao sucesso da programação.</p>
-        </main>
-        
-        <footer>
-            {% for footer in index.footers %}
-            <a href="{{footer.url}}" target="_blank">{{footer.name}}</a>
-            {% endfor %}
-        </footer>
+    
+    <main>
+        <img src="logo.jpg" alt="logo Rocketseat">
+        <h1>Rocketseat</h1>
+        <p>Empresa de ensino dedicada ao sucesso da programação.</p>
+    </main>
+    
+    <footer>
+        {% for footer in index.footers %}
+        <a href="{{footer.url}}" target="_blank">{{footer.name}}</a>
+        {% endfor %}
+    </footer>
+    
 </body>
 </html>    

@@ -19,7 +19,7 @@ header{
     position: relative;
 }
 header a{
-    background: rgb(6, 9, 26);
+    background: rgba(6, 9, 26, 0);
     margin: 30px;
     color: white;
     text-decoration: none;
@@ -28,7 +28,6 @@ header a:hover{
     color: rgb(63, 206, 63);
     transition: 0.5s;
 }
-
 header img{
     width: 150px;
     text-align: left;
@@ -36,9 +35,12 @@ header img{
     left: 3%;
     bottom: 30%;
 }
+
 main{
-    background: rgb(42, 25, 100);
+    background: rgb(42, 25, 100);   
     color: white;
+    height: 500px;
+   
 }
 main img{
     margin: 20px;
@@ -54,13 +56,16 @@ body div .index{
 }
 
 /* ===CARDS=== */
+.fundo{
+    background: url("fundo.jpg");
+    padding: 30px;
+}
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     color: gray;
-    margin: 30px;
-    
+    margin: 0px;   
 }
 section div h2{
     margin: 40px auto 90px;
@@ -147,6 +152,10 @@ iframe{
 }
 
 /* ===RODAPÉ=== */
+footer{
+    padding: 30px;
+    background:  rgb(9, 14, 43);
+}
 footer a{
     padding-bottom: 10px;
     color: paleturquoise;
