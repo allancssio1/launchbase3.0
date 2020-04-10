@@ -12,19 +12,7 @@ nunjucks.configure("views", {
     express: server,
     autoescape: false
 })
-// server.get("/layout", function(request,response){
-//     layout = {
-//         headers: [
-//             {name: "Home", target: "_self", url: "/index"},
-//             {name: "Conteúdo", target: "_self", url: "/conteudo"},
-//             {name: "Comunidade", target: "_blank", url: "https://discordapp.com/invite/gCRAFhc"},
-//             {name: "E-mail", target: "_blank", url: "oi@rocketseat.com.br"},
-//             {name: "Telefone", target: "_blank", url: "+5547992078767"},
-//             {name: "Sobre", target: "_blank", url: "https://rocketseat.com.br/"}
-//         ]
-//     }
-//     return response("layout", {layout})
-// })
+
 server.get("/index", function(request, response){
     const index = {
         headers: [
