@@ -74,6 +74,12 @@ header{
     border-bottom: 1px solid var(--color-green);
 }
 
+/*===VIDEO PAGE===*/
+.video{
+    margin: 0 auto;
+    max-width: 800px;   
+}
+
 /*===CARDS===*/
 .cards{
     width: 800px;
@@ -104,6 +110,20 @@ header{
     padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
+}
+
+/*===FATURED===*/
+.featured-wrapper.card-image{
+    position: relative;
+}
+.featured{
+    position: absolute;
+    top: 130px;
+    right: 5px;
+    background: #ff9944;
+    border-radius: 16px;
+    padding: 2px 8px;
+
 }
 
 /*===MODAL===*/

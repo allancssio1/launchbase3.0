@@ -10,7 +10,8 @@ server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express:server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
 server.get("/about", function(request, response){
@@ -30,6 +31,18 @@ server.get("/about", function(request, response){
 })
 server.get("/portifolio", function(request, response){
     return response.render("portifolio", {itens: videos})
+})
+server.get("/video", function(request, response){
+    const id = request.query.id
+    const video = videos.find(function(video){
+        if(video.id == id){
+            return true
+        }
+    })
+    if(!video){
+        return response.send("Video not found!")
+    }
+    return response.render("video", {item: video})
 })
 
 server.listen(5000, function(){
