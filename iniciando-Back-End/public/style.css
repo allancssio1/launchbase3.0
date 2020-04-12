@@ -165,4 +165,11 @@ iframe{
 }
 .card-video{
     position: relative;
+    padding-top: 60%;
+}
+.card-video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
 }
