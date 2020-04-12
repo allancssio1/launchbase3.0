@@ -12,11 +12,9 @@
     <section class="video">
         
         <div class="card" id="{{item.id}}">
-            <div class="card-image {{ '.featured-wrapper' if item.featured }} ">
+            <div class="card-video">
+                <iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
                 <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="videio aula de {{item.title}} Rocketseat">
-                {% if item.fatured %} 
-                    <div class="featured">Featured</div>
-                {% endif %}
             </div>
             <div class="card-content">
                 <p>{{item.title}}</p>

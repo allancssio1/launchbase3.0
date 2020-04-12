@@ -74,11 +74,7 @@ header{
     border-bottom: 1px solid var(--color-green);
 }
 
-/*===VIDEO PAGE===*/
-.video{
-    margin: 0 auto;
-    max-width: 800px;   
-}
+
 
 /*===CARDS===*/
 .cards{
@@ -160,4 +156,13 @@ iframe{
     height: 95%;
     position: absolute;
     top: 5%;
+}
+
+/*===VIDEO PAGE===*/
+.video{
+    margin: 0 auto;
+    max-width: 800px;
+}
+.card-video{
+    position: relative;
 }
