@@ -35,4 +35,4 @@ Instalado como dependências de projetos o nodemon para ajudar no desenvolviment
 
 Usando o nunjucks para enviar para o front-end as configurações pelo back-end,bem como agiliza a edição de informações repetidas e reaproveitamento de código.
 
-Criado uma pággina para mostrar os videos por iframe, onde há a possibilidade de copiar o link do vídeo para compartilhamento.
+Criado uma página para mostrar os videos por iframe, onde há a possibilidade de copiar o link do vídeo para compartilhamento.

@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="x-icon"/>
-    <link rel="stylesheet" href="/style.css">
-    <title>Favicon</title>
-</head>
-<body>
-    
-    <header>
-        <img src="/logo-rocketseat.png"/>
-    
-        {% for header in index.headers %}
-            <a href="{{header.url}}" target="{{header.target}}">{{header.name}}</a>
-        {% endfor %} 
-    </header>
-    
+{% extends "layout.njk" %}
+
+{% block content %}
     <main>
         <img src="logo.jpg" alt="logo Rocketseat">
         <h1>Rocketseat</h1>
@@ -24,10 +8,8 @@
     </main>
     
     <footer>
-        {% for footer in index.footers %}
-        <a href="{{footer.url}}" target="_blank">{{footer.name}}</a>
+        {% for footer in data.footers %}
+            <a href="{{footer.url}}" target="_blank">{{footer.name}}</a>
         {% endfor %}
     </footer>
-    
-</body>
-</html>    
+{% endblock  %}

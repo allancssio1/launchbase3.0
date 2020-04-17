@@ -11,7 +11,7 @@
     <header>
         <img src="/logo-rocketseat.png"/>
     
-        {% for header in layout.headers %}
+        {% for header in data.headers %}
             <a href="{{header.url}}" target="{{header.target}}">{{header.name}}</a>
         {% endfor %} 
     </header>

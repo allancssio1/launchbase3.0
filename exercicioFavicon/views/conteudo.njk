@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="x-icon"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
-    <title>Favicon</title>
-</head>
-<body>
-    <header>
-        <img src="/logo-rocketseat.png"/>
+{% extends "layout.njk" %}
     
-        {% for header in content.headers %}
-            <a href="{{header.url}}" target="{{header.target}}">{{header.name}}</a>
-        {% endfor %} 
-    </header>
-    
+{% block content %}
     <div class="fundo">
         <section class="cards">
-            {% for card in content.cards %}
+            {% for card in data.cards %}
                 <div class="card" id="{{card.idCard}}">
                     <h2 id="{{card.id}}">{{card.numberModule}}</h2>
                     <img src="/{{card.src}}.svg"/>    
@@ -30,26 +14,10 @@
             {% endfor %}
         </section>
     </div>
-    
-    <article>
-        <div class="modalOverlay">
-            <div class="modal">
-                <a class="maxim-modal">
-                    <i class="material-icons">crop_3_2</i>
-                </a>
-
-                <a class="close-modal">
-                        <i class="material-icons">close</i>
-                </a>
-
-                <div class="modalContent">
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
-            </div>
-        </div>
-    </article>
-
+{% endblock  %}
+{% block script %}
     <script src="/script.js"></script>
+{% endblock  %}    
 
 </body>
 </html>
