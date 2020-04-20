@@ -28,7 +28,9 @@ server.get("/conteudo", function(request, response){
 })
 
 server.get("/curso", function(request, response){
-    return response.render("curso", {data})
+    // const id = req.params.id
+    
+    return response.render("curso")
 })
 
 server.listen(5000, function(){

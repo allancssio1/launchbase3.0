@@ -39,8 +39,7 @@ header img{
 main{
     background: rgb(42, 25, 100);   
     color: white;
-    height: 500px;
-   
+    height: 500px;  
 }
 main img{
     margin: 20px;
@@ -54,6 +53,7 @@ main p{
 body div .index{
     background: url("fundo.jpg");
 }
+
 
 /* ===CARDS=== */
 .fundo{
@@ -91,6 +91,7 @@ section div p{
 #goStack{
     color: #04d361
 }
+
 
 /* ===MODAL=== */
 .modalOverlay{
@@ -130,6 +131,7 @@ iframe{
     right: 0px;
     bottom: 0px;
 }
+
 
 /*===MODAL ACTIVE===*/
 .modalOverlay.active{
