@@ -93,14 +93,11 @@ section div p{
 }
 
 /*===IFRAME DO CURSO===*/
-.couse{
-    
-}
 iframe{
     width: 100%;
-    height: 960%;
+    height: 730%;
     position: absolute;
-    top: 60px;
+    top: 78px;
     left: 0px;
 }
 

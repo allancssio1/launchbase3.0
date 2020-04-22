@@ -30,7 +30,7 @@ server.get("/conteudo", function(request, response){
 server.get("/curso", function(request, response){
     // const id = req.params.id
     
-    return response.render("curso")
+    return response.render("curso", {data})
 })
 
 server.listen(5000, function(){
