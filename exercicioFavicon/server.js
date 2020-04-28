@@ -27,10 +27,17 @@ server.get("/conteudo", function(request, response){
     return response.render("conteudo", {data})
 })
 
-server.get("/curso", function(request, response){
-    // const id = req.params.id
-    
-    return response.render("curso", {data})
+server.get("/curso/:id", function(request, response){
+    const id = request.params.id
+
+    if(id.id == id){
+        return true
+    }
+
+    if(!id){
+        return response.send("no found")
+    }
+    return response.render("curso")
 })
 
 server.listen(5000, function(){
