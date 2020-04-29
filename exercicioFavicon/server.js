@@ -30,14 +30,7 @@ server.get("/conteudo", function(request, response){
 server.get("/curso/:id", function(request, response){
     const id = request.params.id
 
-    if(id.id == id){
-        return true
-    }
-
-    if(!id){
-        return response.send("no found")
-    }
-    return response.render("curso")
+    return response.render("curso", {data})
 })
 
 server.listen(5000, function(){
