@@ -15,22 +15,22 @@ nunjucks.configure("views", {
     noCache: true
 })
 
-server.get("/layout", function(request,response){
-    return response.render("layout", {data})
+server.get("/layout", function(req,res){
+    return res.render("layout", {data})
 })
 
-server.get("/index", function(request, response){
-    return response.render("index", {data})
+server.get("/index", function(req, res){
+    return res.render("index", {data})
 })
 
-server.get("/conteudo", function(request, response){
-    return response.render("conteudo", {data})
+server.get("/conteudo", function(req, res){
+    return res.render("conteudo", {data})
 })
 
-server.get("/curso/:id", function(request, response){
-    const id = request.params.id
+server.get("/course/:id", function(req, res){
+    const idCourse = req.params.id
 
-    return response.render("curso", {data})
+    return res.render(`${idCourse}`, {data})
 })
 
 server.listen(5000, function(){
