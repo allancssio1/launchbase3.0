@@ -1,13 +1,13 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-    <main>
+    <main class="mainIndex">
         <img src="logo.jpg" alt="logo Rocketseat">
         <h1>Rocketseat</h1>
         <p>Empresa de ensino dedicada ao sucesso da programação.</p>
     </main>
     
-    <footer>
+    <footer class="inderFooter">
         {% for footer in data.footers %}
             <a href="{{footer.url}}" target="_blank">{{footer.name}}</a>
         {% endfor %}

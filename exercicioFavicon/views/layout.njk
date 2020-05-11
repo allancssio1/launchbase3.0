@@ -8,18 +8,18 @@
     <title>Favicon</title>
 </head>
 <body>
-    <header>
+    <header class="headerLayout">
         <img src="/logo-rocketseat.png"/>
-    
+
         {% for header in data.headers %}
             <a href="{{header.url}}" target="{{header.target}}">{{header.name}}</a>
         {% endfor %} 
     </header>
     <div class="content">
-    {% block content %}
-    {% endblock %}
-
+        {% block content %}
+        {% endblock %}
     </div>
+
     {% block script %}
     {% endblock %}
 </body>

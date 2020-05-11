@@ -76,5 +76,32 @@ module.exports = {
             name: "Facebook",
             url: "https://www.facebook.com/rocketseat/"
         }
+    ],
+    starter: [
+        {
+            name: "INÍCIO",
+            target: "_self",
+            url: "../index"
+        },
+        {
+            name: "STARTER",
+            target: "_self",
+            url: "../course/starter"
+        },
+        {
+            name: "BOOTCAMP",
+            target: "_self",
+            url: "../course/gostack"
+        },
+        {
+            name: "COMUNIDADE",
+            target: "_blank",
+            url: "https://discordapp.com/invite/gCRAFhc"
+        },
+        {
+            name: "BLOG",
+            target: "_blank",
+            url: "https://blog.rocketseat.com.br/"
+        }
     ]
 }
