@@ -103,5 +103,19 @@ module.exports = {
             target: "_blank",
             url: "https://blog.rocketseat.com.br/"
         }
+    ],
+    images:[
+        {
+            name: "facebook"
+        },
+        {
+            name: "instagram"
+        },
+        {
+            name: "twitter"
+        },
+        {
+            name: "youtube"
+        },
     ]
 }

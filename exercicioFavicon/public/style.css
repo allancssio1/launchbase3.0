@@ -130,6 +130,7 @@ body div .index{
     align-items: center;
 }
 .linksContainer{
+    font-size: 15px;
     width: 40%;
     height: 45%;
     position: absolute;
@@ -142,6 +143,7 @@ body div .index{
 .headerStarter #linkMenu{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
 }
 
 .headerStarter #links{
@@ -150,9 +152,11 @@ body div .index{
     text-decoration: none;
 }
 .headerStarter #links:hover{
+    font-weight: 800;
     transition: 500ms;
     color: white;
     text-decoration: underline;
+    
 }
 .headerStarter .redesContainer{
     position: absolute;
@@ -171,4 +175,7 @@ body div .index{
     top: 20%;
     right: 10%;
     border-radius: 10px;
+}
+main.starter h1{
+    margin: 8% 15%;
 }
