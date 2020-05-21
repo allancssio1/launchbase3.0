@@ -36,10 +36,35 @@
   </header>
   
   <main class="starter">
-    <h1> <span id="starteR">Cursos 100% online e gratuitos </span> para você entrar com o pé direito nas tecnologias mais desejadas do mercado.
-    Descubra o caminho para dominar a OmniStack.</h1>
-    <h3>Descubra o caminho para dominar a OmniStack.</h3>
+    <h1><span id="starteR">Cursos 100% online e gratuitos </span> para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</h1>
+    <h3 class="h3Starter">Descubra o caminho para dominar a OmniStack.</h3>
     
+    <div class="etapa">
+      <h3 class="h3Starter">PRIMEIRA ETAPA</h3>
+    </div>
+    
+    <article class="primeiraEtapa">
+      {% for item in data.courseStart %}
+        <div class="js">
+          <h2>{{item.title}}</h2>
+          <div class="linguagem">
+            <img src="/{{item.image}}.svg">
+            <div class="contentBox">
+              <h3>{{item.course}}</h3>
+              <h4>{{item.teacher}}</h4>
+              <button>{{item.button}}</button>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </article>
+    <div id="seta">
+        <img src="/seta-direita.svg">
+      </div>
   </main>
+
+  <footer>
+  
+  </footer>
 </body>
 </html>

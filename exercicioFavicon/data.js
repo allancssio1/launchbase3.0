@@ -64,58 +64,25 @@ module.exports = {
         }
     ],
     footers: [
-        {
-            name: "GitHub",
-            url: "https://github.com/Rocketseat"
-        },
-        {
-            name: "Instagram",
-            url: "https://www.instagram.com/rocketseat_oficial/"
-        },
-        {
-            name: "Facebook",
-            url: "https://www.facebook.com/rocketseat/"
-        }
+        {name: "GitHub", url: "https://github.com/Rocketseat"},
+        {name: "Instagram", url: "https://www.instagram.com/rocketseat_oficial/"},
+        {name: "Facebook", url: "https://www.facebook.com/rocketseat/"}
     ],
     starter: [
-        {
-            name: "INÍCIO",
-            target: "_self",
-            url: "../index"
-        },
-        {
-            name: "STARTER",
-            target: "_self",
-            url: "../course/starter"
-        },
-        {
-            name: "BOOTCAMP",
-            target: "_self",
-            url: "../course/gostack"
-        },
-        {
-            name: "COMUNIDADE",
-            target: "_blank",
-            url: "https://discordapp.com/invite/gCRAFhc"
-        },
-        {
-            name: "BLOG",
-            target: "_blank",
-            url: "https://blog.rocketseat.com.br/"
-        }
+        {name: "INÍCIO", target: "_self", url: "../index"},
+        {name: "STARTER", target: "_self", url: "../course/starter"},
+        {name: "BOOTCAMP", target: "_self", url: "../course/gostack"},
+        {name: "COMUNIDADE", target: "_blank", url: "https://discordapp.com/invite/gCRAFhc"},
+        {name: "BLOG", target: "_blank", url: "https://blog.rocketseat.com.br/" }
     ],
     images:[
-        {
-            name: "facebook"
-        },
-        {
-            name: "instagram"
-        },
-        {
-            name: "twitter"
-        },
-        {
-            name: "youtube"
-        },
+        {name: "facebook"},
+        {name: "instagram"},
+        {name: "twitter"},
+        {name: "youtube"},
+    ],
+    courseStart: [
+        {course: "JavaSript", title: "Domine a linguagem de programação", teacher: "Diego Fernandes", button: "Acessar", image: "curso-javascript"},
+        {course: "Javascript ES6+", title: "Acompanhe o avanço da linguagem", teacher: "Diego Fernandes", button: "Acessar", image: "curso-javascript-es6"}
     ]
 }
