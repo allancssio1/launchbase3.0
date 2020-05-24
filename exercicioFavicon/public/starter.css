@@ -87,6 +87,8 @@ main.starter h1{
 }
 main.starter .h3Starter{
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
   color: #7159c1;
 }
 main.starter .descript{
@@ -122,7 +124,7 @@ main.starter h2{
   margin-bottom: 30%;
 }
 .primeiraEtapa .linguagem{
-  background: rgb(218, 208, 250);
+  background-color: rgb(226, 218, 253);
   position: relative;
 }
 .primeiraEtapa .linguagem img{
@@ -188,7 +190,7 @@ article.segundaEtapa div.js span.descript{
   margin-top: 32px;
 }
 .segundaEtapa .linguagem{
-  background: rgb(218, 208, 250);
+  background-color: rgb(226, 218, 253);
   position: relative;
   margin: 40% auto;
 }
@@ -223,7 +225,7 @@ article.segundaEtapa div.js span.descript{
   width: 100%;
   height: 30vw;
   position: relative;
-  background:rgb(218, 208, 250);
+  background-color: rgb(226, 218, 253);
 }
 .sectionFooter .block-comunit{
   max-width: 35%;
@@ -283,4 +285,30 @@ article.segundaEtapa div.js span.descript{
 }
 .starter-footer .email input{
   padding: 5% 20% 5% 0px;
+}
+.starter-footer .email .lable img{
+  width: 30px;
+  position: absolute;
+  top: 20%;
+  left: 58%;
+}
+.starter-footer .rodape{
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  padding: 2%;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+.starter-footer .copy p{
+  color: rgba(0, 0, 0, 0.6);
+}
+.starter-footer .copy p span{
+  color: #666666;
+  font-weight: bold;
+}
+.starter-footer .footer-links a{
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
 }
