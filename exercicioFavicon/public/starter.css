@@ -1,0 +1,286 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body{
+  padding: 0px;
+  text-align: center;
+  position: relative;
+}
+/* ===STARTER=== */
+
+.headerStarter{
+  max-width: 1400px;
+  width: 100%;
+  min-height: 80px;
+  height: 100%;
+  background: #7159c1;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;  
+  position: relative;
+}
+.headerStarter #logoStarter img{
+  width: 5%;
+  text-align: left;
+  position: absolute;
+  left: 11%;
+  display: flex;
+  align-items: center;
+}
+.linksContainer{
+  font-size: 15px;
+  width: 40%;
+  height: 45%;
+  position: absolute;
+  left: 16%;
+  top: 28%;
+  border-left: 1px solid rgba(255, 255, 255, 0.507);
+  display: flex;
+  align-items: center;
+}
+.headerStarter #linkMenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5%;
+}
+
+.headerStarter #links{
+  background: #7159c1;
+  color: rgba(255, 255, 255, 0.507);
+  text-decoration: none;
+}
+.headerStarter #links:hover{
+  font-weight: 800;
+  transition: 100ms;
+  color: white;
+  text-decoration: underline;
+}
+.headerStarter .redesContainer{
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.headerStarter .redesContainer img{
+  width: 20%;
+}
+.headerStarter button{
+  display: flex;
+  justify-content: center;
+  padding: 1% 3%;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  border-radius: 10px;
+}
+main.starter h1{
+  font-family: 'Roboto-bold', sans-serif;
+  margin: 8% 15% 3%;
+  font-weight: bold;
+}
+.etapa{
+  margin: 6% auto;
+}
+main.starter .h3Starter{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #7159c1;
+}
+main.starter .descript{
+  color: #7159c1a4;
+}
+.starter .descript strong{
+  color: #7159c1;
+  font-weight: bold;
+}
+main.starter h2{
+  color: rgb(55, 55, 55);
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.primeiraEtapa{
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.primeiraEtapa .js{
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 300px;
+  margin: auto 10%;
+  min-width: 200px;
+  min-height: 200px;
+}
+.primeiraEtapa .js h2{
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 30%;
+}
+.primeiraEtapa .linguagem{
+  background: rgb(218, 208, 250);
+  position: relative;
+}
+.primeiraEtapa .linguagem img{
+  width: 40%;
+  position: absolute;
+  top: -25%;
+  left: 30%;
+}
+.primeiraEtapa .linguagem .contentBox{
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 30%;
+}
+.primeiraEtapa .linguagem .contentBox h3{
+
+}
+.primeiraEtapa .linguagem button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  margin: 30px auto;
+  background: rgb(113, 89, 193);
+  padding: 20px;
+  border-radius: 5px;
+}
+.primeiraEtapa #seta img{
+  width: 4%;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+
+#domine{
+  font-family: "Source Sans Pro", sans-serif;
+}
+.segundaEtapa{
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.segundaEtapa .js{
+  max-width: 300px;
+  margin: auto 2%;
+  min-width: 200px;
+  min-height: 200px;
+}
+.segundaEtapa .js h3{
+  font-size: 18px;
+  color: rgb(55, 55, 55);
+  line-height: 26px;
+}
+.segundaEtapa .js h2{
+  font-size: 17px;
+  margin-bottom: 10%;
+}
+article.segundaEtapa div.js span.descript{
+  color: rgb(154, 142, 191);
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 32px;
+}
+.segundaEtapa .linguagem{
+  background: rgb(218, 208, 250);
+  position: relative;
+  margin: 40% auto;
+}
+.segundaEtapa .linguagem img{
+  width: 40%;
+  position: absolute;
+  top: -25%;
+  left: 30%;
+}
+.segundaEtapa .linguagem .contentBox{
+  padding: 20%;
+}
+.segundaEtapa .linguagem .contentBox h3{
+  margin: 10% auto auto;
+}
+.segundaEtapa .linguagem button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  margin: 10% auto 0%;
+  background: rgb(113, 89, 193);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sectionFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vw;
+  position: relative;
+  background:rgb(218, 208, 250);
+}
+.sectionFooter .block-comunit{
+  max-width: 35%;
+  top: 15%;
+  left: 15%;
+  text-align: left;
+}
+.sectionFooter .block-comunit h1{
+  font-family: "Roboto-bold", sans-serif;
+  color: rgba(0, 0, 0, 0.815);
+  line-height: 42px;
+  font-size: 32px;
+  margin-bottom: 2%;
+}
+.sectionFooter .block-comunit h3{
+  color: #7159c1b9;
+  line-height: 26px;
+  margin: 2% auto 10%;
+}
+.sectionFooter .block-comunit button{
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+  background-color: #7159c1;
+  padding: 4% 8%;
+  border-radius: 5px;
+}
+.starter-footer .header-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(113, 89, 190); 
+  height: 13vw;
+}
+.starter-footer .header-footer div{
+  margin: auto 2% ;
+}
+.starter-footer .header-footer .email{
+  text-align: left;
+}
+.starter-footer .email h2{
+  font-family: "Roboto-bold", sans-serif;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.starter-footer .email p{
+  font-family: "Roboto-bold", sans-serif;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 14px;
+} 
+.starter-footer .email .lable{
+  position: relative;
+}
+.starter-footer .email input{
+  padding: 5% 20% 5% 0px;
+}

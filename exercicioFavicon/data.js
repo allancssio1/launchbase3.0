@@ -81,8 +81,34 @@ module.exports = {
         {name: "twitter"},
         {name: "youtube"},
     ],
-    courseStart: [
+    courseStarter1: [
         {course: "JavaSript", title: "Domine a linguagem de programação", teacher: "Diego Fernandes", button: "Acessar", image: "curso-javascript"},
         {course: "Javascript ES6+", title: "Acompanhe o avanço da linguagem", teacher: "Diego Fernandes", button: "Acessar", image: "curso-javascript-es6"}
+    ],
+    courseStarter2: [
+        {
+            course: "NodeJS",
+            title: "1. Construa a base da sua aplicação no back-end",
+            description: "Para controlar a lógica e os dados das aplicações web e mobile",
+            teacher: "Diego Fernandes",
+            button: "Acessar",
+            image: "curso-nodejs"
+        },
+        {
+            course: "ReactJS",
+            title: "2. Desenvolva a versão web da sua aplicação",
+            description: "Para construir interfaces responsivas e dinâmicas no front-end",
+            teacher: "Diego Fernandes",
+            button: "Acessar",
+            image: "curso-reactjs"
+        },
+        {
+            course: "React Native",
+            title: "3. Crie as versões mobile da sua aplicação",
+            description: "Para desenvolver apps para iOS e Android com interface nativa",
+            teacher: "Diego Fernandes",
+            button: "Acessar",
+            image: "curso-react-native"
+        }
     ]
 }

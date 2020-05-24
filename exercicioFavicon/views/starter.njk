@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/starter.css">
   <link rel="icon" href="/favicon.ico" type="x-icon"/>
   <title>Rocketseat - Starter</title>
 </head>
@@ -12,7 +12,7 @@
   <header class="headerStarter">
     
     <div id="logoStarter">
-      <img src="/logo.png">
+      <img src="/logo.png"/>
     </div>  
     
     <div class="linksContainer">
@@ -26,7 +26,7 @@
     <div class="redesContainer">
       <div id="linksContatos">
         {% for image in data.images %}
-          <img src="/{{image.name}}.png" alt="{{image.name}} da rocketseat" width="{{image.width}}">
+          <img src="/{{image.name}}.png" alt="{{image.name}} da rocketseat" width="{{image.width}}"/>
         {% endfor %}
       </div>
     </div>
@@ -37,34 +37,90 @@
   
   <main class="starter">
     <h1><span id="starteR">Cursos 100% online e gratuitos </span> para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</h1>
-    <h3 class="h3Starter">Descubra o caminho para dominar a OmniStack.</h3>
+    <h3 class="descript">Descubra o caminho para dominar a <strong>OmniStack.</strong></h3>
     
     <div class="etapa">
       <h3 class="h3Starter">PRIMEIRA ETAPA</h3>
     </div>
     
     <article class="primeiraEtapa">
-      {% for item in data.courseStart %}
+      <div id="seta">
+        <img src="/seta-direita.svg"/>
+      </div>
+      {% for item in data.courseStarter1 %}
         <div class="js">
           <h2>{{item.title}}</h2>
           <div class="linguagem">
-            <img src="/{{item.image}}.svg">
+            <img src="/{{item.image}}.svg"/>
             <div class="contentBox">
               <h3>{{item.course}}</h3>
-              <h4>{{item.teacher}}</h4>
+              <p><span id="teacher">{{item.teacher}}</span></p>
               <button>{{item.button}}</button>
             </div>
           </div>
         </div>
       {% endfor %}
     </article>
-    <div id="seta">
-        <img src="/seta-direita.svg">
-      </div>
+    
+    <div class="etapa">
+      <h3 class="h3Starter">SEGUNDA ESTAPA</h3>
+    </div>
+
+    <h2 id="domine">Domine a stack</h2>
+    <article class="segundaEtapa">
+      {% for item in data.courseStarter2 %}
+        <div class="js">
+          <h2>{{item.title}}</h2>
+          <span class="descript">{{item.description}}</span>
+          <div class="linguagem">
+            <img src="/{{item.image}}.svg"/>
+            <div class="contentBox">
+              <h3>{{item.course}}</h3>
+              <p><span id="teacher">{{item.teacher}}</span></p>
+              <button>{{item.button}}</button>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </article>
   </main>
 
-  <footer>
-  
+  <section class="sectionFooter">
+    <div class="block-comunit">
+      <h1>Acelere a sua evolução. Participe da nossa comunidade no Discord.</h1>
+      <h3>Potencialize o seu aprendizado, destaque-se entre os programadores e ganhe prêmios exclusivos.</h3>
+      <button>Acessar comunidade</button>
+    </div>
+    <div class="image-comunit">
+      <img src="/comunidade-home.svg"/>
+    </div>
+  </section>
+
+  <footer class="starter-footer">
+    <div class="header-footer">
+      <div class="tech">
+        <img src="/techs-1.svg"/>
+      </div>
+      <div class="yoda">
+        <img src="/yoda.svg"/>
+      </div>
+      <div class="email">
+        <h2>Receba conteúdos exclusivos</h2>
+        <p>Receber spam, você não irá!</p>
+        <div class="lable">
+          <input type="text" placeholder="Digite aque seu melhor e-mail.">
+          <img src="/send.svg"/>
+        </div>
+      </div>
+      <div class="tech">
+        <img src="/techs-2.svg"/>
+      </div>
+    </div>
+Rocketseat © 2020 - Todos os direitos reservados
+Direitos autorais
+Termos de uso
+Política de privacidade
+Consulta de certificados
   </footer>
 </body>
 </html>
