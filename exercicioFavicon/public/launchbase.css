@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
+
+:root{
+  --back-black: rgb(16, 15, 18);
+  --color-launch: #FD951F;
+  --font-source: "Source Sans Pro", sans-serif; 
+  --font-roboto: "Roboto", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  max-width: 1380px;
+  padding: 0;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--back-black);
+  color: white;
+
+}
+.header-launch{
+  background: linear-gradient(var(--back-black) 0%, rgb(26, 26, 31) 100%);
+  width: 100%;
+  height: 750px;
+  padding: 12% 15%;
+}
+.header-launch img{
+  width: 31%;
+}
+.header-launch h1{
+  color: white;
+  padding: 5% 10%;
+  font-size: 24px;
+}
+/* .header-launch*/ b{ 
+  color: var(--color-launch);
+}
+.header-launch h3{
+  color: white;
+  font-size: 16px;
+  margin-bottom: 2vw;
+}
+.main-launch .header-launch #form-email{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgba(100, 100, 100, 0.596);
+  font-weight: bold;
+  width: 34%;
+  height: 4vw;
+  padding-left: 14px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.main-launch .header-launch button{
+  font-family: 'Roboto', sans-serif;
+  width: 22%;
+  font-weight: bolder;
+  text-align: center;
+  background-color: var(--color-launch);
+  border: 1px solid var(--color-launch);
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 17px;
+}
+.launchBase-question{
+  position: relative;
+}
+.setor-seta{
+  position: absolute;
+  top: -150px;
+  left: 45%;
+  background-color: var(--back-black);
+  padding: 50px 45px 0px 45px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.setor-seta .seta-down img{
+  width: 18%;
+  position: absolute;
+  left: 40%;
+  top: 20px;
+}
+.flex-area{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 150px;
+}
+.launchBase-question .section-launchbase{
+  max-inline-size: 490px;
+  font-family: var(--font-roboto)
+
+}
+.launchBase-question .section-launchbase h1{
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.launchBase-question .section-launchbase p{
+  color: #adadad;
+  line-height: 27px;
+  text-align: left;
+  font-size: 18px;
+}
