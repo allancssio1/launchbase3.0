@@ -70,7 +70,7 @@ body{
 }
 .setor-seta{
   position: absolute;
-  top: -150px;
+  top: -200px;
   left: 45%;
   background-color: var(--back-black);
   padding: 50px 45px 0px 45px;

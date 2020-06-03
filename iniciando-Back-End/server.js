@@ -35,11 +35,11 @@ server.get("/portifolio", function(request, response){
 server.get("/video", function(request, response){
     const id = request.query.id
     const video = videos.find(function(video){
-        return video.id == id // esta é a maneira mais rapida de retornar true ou false
+        // return video.id == id // esta é a maneira mais rapida de retornar true ou false
 
-        // if(video.id == id){
-        //     return true
-        // }
+        if(video.id == id){
+            return true
+        }
         // esta maneira mais facil de entender p return true ou false.
     })
     if(!video){
