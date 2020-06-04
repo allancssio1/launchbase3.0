@@ -1,7 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
 
 :root{
-  --back-black: rgb(16, 15, 18);
+  --gradient-escuro: rgb(16, 15, 18);
+  --gradient-claro: rgb(26,26,31);
   --color-launch: #FD951F;
   --font-source: "Source Sans Pro", sans-serif; 
   --font-roboto: "Roboto", sans-serif;
@@ -17,12 +18,12 @@ body{
   padding: 0;
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: var(--back-black);
+  background-color: var(--gradient-escuro);
   color: white;
 
 }
 .header-launch{
-  background: linear-gradient(var(--back-black) 0%, rgb(26, 26, 31) 100%);
+  background: linear-gradient(var(--gradient-escuro) 0%, var(--gradient-claro)100%);
   width: 100%;
   height: 750px;
   padding: 12% 15%;
@@ -72,7 +73,7 @@ body{
   position: absolute;
   top: -200px;
   left: 45%;
-  background-color: var(--back-black);
+  background-color: var(--gradient-escuro);
   padding: 50px 45px 0px 45px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -104,4 +105,66 @@ body{
   line-height: 27px;
   text-align: left;
   font-size: 18px;
+}
+.piloto{
+  max-width: 1124px;
+  margin: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 30px;
+  text-align: left;
+}
+.piloto .quem-piloto{
+  max-width: 500px;
+  margin-right: 80px;
+}
+.piloto .quem-piloto h2{
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.piloto .quem-piloto p{
+  margin-bottom: 30px;
+  color: #adadad;
+  font-size: 18px;
+}
+.piloto .quem-piloto .feitos{
+  max-width: 400px;
+  color: #adadad;
+  margin-left: 40px;
+  font-size: 18px;
+}
+.piloto .teacher-area{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.piloto .teacher-area img{
+  width: 500px;
+  margin: auto auto 40px;
+}
+.piloto .teacher-area .buttons{
+  position: absolute;
+  bottom: 5%;
+  right: 30%;
+}
+.piloto .teacher-area .buttons button{
+  background-color: var(--color-launch);
+  color: black;
+  padding: 15px 20px;
+  font-family: var(--font-source);
+  border-radius: 5px;
+  border: 1px solid var(--color-launch);
+  font-weight: 900;
+  margin: auto 5px;
+}
+.piloto .teacher-area .teacher{
+  position: absolute;
+  top: 10%;
+  left: -5%;
+}
+.piloto .teacher-area h2{
+  font-size: 18px;
+}
+.piloto .teacher-area p{
+  font-size: 14px;
 }

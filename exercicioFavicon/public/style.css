@@ -41,7 +41,7 @@ body{
 }
 
 .mainIndex{
-    background: rgb(42, 25, 100);   
+    background: var(--fundo-gradiente);   
     color: white;
     height: 500px;  
 }
