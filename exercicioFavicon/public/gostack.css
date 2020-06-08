@@ -3,7 +3,7 @@
 :root{
   --gradient-escuro: rgb(16, 15, 18);
   --gradient-claro: rgb(26,26,31);
-  --color-launch: #FD951F;
+  --color-gostack: rgb(63, 206, 63);
   --font-source: "Source Sans Pro", sans-serif; 
   --font-roboto: "Roboto", sans-serif;
 }
@@ -22,29 +22,29 @@ body{
   color: white;
 
 }
-.header-launch{
+.header-gostack{
   background: linear-gradient(var(--gradient-escuro) 0%, var(--gradient-claro)100%);
   width: 100%;
   height: 750px;
   padding: 12% 15%;
 }
-.header-launch img{
+.header-gostack img{
   width: 31%;
 }
-.header-launch h1{
+.header-gostack h1{
   color: white;
   padding: 5% 10%;
   font-size: 24px;
 }
-/* .header-launch*/ b{ 
-  color: var(--color-launch);
+/* .header-gostack*/ b{ 
+  color: var(--color-gostack);
 }
-.header-launch h3{
+.header-gostack h3{
   color: white;
   font-size: 16px;
   margin-bottom: 2vw;
 }
-.main-launch .header-launch #form-email{
+.main-gostack .header-gostack #form-email{
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: rgba(100, 100, 100, 0.596);
@@ -55,18 +55,18 @@ body{
   border: 1px solid white;
   border-radius: 5px;
 }
-.main-launch .header-launch button{
+.main-gostack .header-gostack button{
   font-family: 'Roboto', sans-serif;
   width: 22%;
   font-weight: bolder;
   text-align: center;
-  background-color: var(--color-launch);
-  border: 1px solid var(--color-launch);
+  background-color: var(--color-gostack);
+  border: 1px solid var(--color-gostack);
   border-radius: 5px;
   font-size: 14px;
   padding: 17px;
 }
-.launchBase-question{
+.gostack-question{
   position: relative;
 }
 .setor-seta{
@@ -91,16 +91,20 @@ body{
   justify-content: space-between;
   margin: 150px;
 }
-.launchBase-question .section-launchbase{
+.flex-area div img{
+  width: 300px;
+  margin-left: 50px;
+}
+.gostack-question .section-gostack{
   max-inline-size: 490px;
   font-family: var(--font-roboto)
 
 }
-.launchBase-question .section-launchbase h1{
+.gostack-question .section-gostack h1{
   font-size: 36px;
   margin-bottom: 40px;
 }
-.launchBase-question .section-launchbase p{
+.gostack-question .section-gostack p{
   color: #adadad;
   line-height: 27px;
   text-align: left;
@@ -139,7 +143,7 @@ body{
   position: relative;
 }
 .piloto .teacher-area img{
-  width: 500px;
+  width: 400px;
   margin: auto auto 40px;
 }
 .piloto .teacher-area .buttons{
@@ -148,24 +152,26 @@ body{
   right: 30%;
 }
 .piloto .teacher-area .buttons button{
-  background-color: var(--color-launch);
+  background-color: var(--color-gostack);
   color: black;
   padding: 15px 20px;
   font-family: var(--font-source);
   border-radius: 5px;
-  border: 1px solid var(--color-launch);
+  border: 1px solid var(--color-gostack);
   font-weight: 900;
   margin: auto 5px;
 }
 .piloto .teacher-area .teacher{
   position: absolute;
   top: 10%;
-  left: -5%;
+  left: -15%;
 }
 .piloto .teacher-area h2{
   font-size: 18px;
 }
 .piloto .teacher-area p{
+  font-weight: bold;
+  color: var(--color-gostack);
   font-size: 14px;
 }
 .footer-main{
@@ -195,37 +201,37 @@ body{
   font-size: 20px;
   padding: 15px;
   border-radius: 5px;
-  border: 1px solid var(--color-launch);
+  border: 1px solid var(--color-gostack);
   margin-right: 10px;
 }
 .footer-main-content form button{
-  background: var(--color-launch);
+  background: var(--color-gostack);
   font-size: 20px;
   padding: 15px;
   border-radius: 5px;
-  border: 1px solid var(--color-launch);
+  border: 1px solid var(--color-gostack);
 }
 
-.footer-launch{
+.footer-gostack{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-size: 14px;
   margin-bottom: 10px;
 }
-.footer-launch .footer-logo{
+.footer-gostack .footer-logo{
   display: flex;
   justify-content: space-evenly;
 }
-.footer-launch .footer-logo img{
+.footer-gostack .footer-logo img{
   width: 100px;
   margin-right: 10px;
 }
-.footer-launch .links-footer{
+.footer-gostack .links-footer{
   display: flex;
   flex-direction: row;
 }
-.footer-launch .links-footer h2{
+.footer-gostack .links-footer h2{
   font-size: 14px;
   margin: auto 10px;
 }
