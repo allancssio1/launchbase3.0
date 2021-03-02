@@ -19,7 +19,7 @@ server.get("/layout", function(req,res){
     return res.render("layout", {data})
 })
 
-server.get("/index", function(req, res){
+server.get("/", function(req, res){
     return res.render("index", {data})
 })
 

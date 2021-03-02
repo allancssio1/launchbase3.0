@@ -3,7 +3,7 @@ module.exports = {
         {
             name: "Home",
             target: "_self",
-            url: "/index"
+            url: "/"
         },
         {
             name: "Conteúdo",
